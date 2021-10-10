@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monospace:pixelsize=22:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -152,7 +152,7 @@ static unsigned int rows = 24;
 /*
  * Default colour and shape of the mouse cursor
  */
-static unsigned int mouseshape = XC_xterm;
+static unsigned int mouseshape = XC_arrow;
 static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
 
