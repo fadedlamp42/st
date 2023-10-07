@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monospace:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Hack:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -20,7 +20,7 @@ static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
-char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
+char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 115200";
 
 /* identification sequence returned in DA and DECID */
 char *vtiden = "\033[?6c";
@@ -100,7 +100,7 @@ static const char *colorname[] = {
 	"red3",
 	"green3",
 	"yellow3",
-	"blue2",
+	"#2733ff",
 	"magenta3",
 	"cyan3",
 	"gray90",
@@ -195,8 +195,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_plus,        zoom,           {.f = +3} },
-	{ ControlMask,          XK_minus,       zoom,           {.f = -3} },
+	{ TERMMOD,              XK_plus,        zoom,           {.f = +2} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -2} },
 	{ ControlMask,          XK_equal,       zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
